@@ -70,7 +70,7 @@ function App() {
         <tbody>
           {loading ? (
             <tr>
-              <td colSpan="5">Loading...</td>
+              <td colSpan={5}>Loading...</td>
             </tr>
           ) : filteredServices.length > 0 ? (
             filteredServices.map((service) => (
@@ -93,7 +93,7 @@ function App() {
             ))
           ) : (
             <tr>
-              <td colSpan="5">No Data Available</td>
+              <td colSpan={5}>No Data Available</td>
             </tr>
           )}
         </tbody>
